@@ -6,7 +6,7 @@ import './App.css'
 
 class App extends Component {
   state = {
-    isLoggedIn: false,
+    isLoggedIn: true,
   }
 
   render() {
@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <div className="container">
         <Welcome greeting="Hello" name="User" />
-        {isLoggedIn ? <button>Logout</button> : null}
+        {isLoggedIn && <button>Logout</button>}
       </div>
     )
   }
