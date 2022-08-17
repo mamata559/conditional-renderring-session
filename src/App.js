@@ -9,8 +9,6 @@ class App extends Component {
     isLoggedIn: false,
   }
 
-  renderAuthButton = () => {}
-
   render() {
     let authButton
     const {isLoggedIn} = this.state
