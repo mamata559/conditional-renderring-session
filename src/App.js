@@ -11,7 +11,7 @@ class App extends Component {
 
   renderAuthButton = () => {
     const {isLoggedIn} = this.state
-    if (isLoggedIn === true) {
+    if (isLoggedIn === false) {
       return <button>Logout</button>
     }
     return <button>Login</button>
